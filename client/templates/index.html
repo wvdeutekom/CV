@@ -9,21 +9,23 @@
 
 
 <template name="home">
-<h1 id="curriculum-vitae-wijnand-van-deutekom">Curriculum Vitae - Wijnand van Deutekom</h1>
-<hr>
+<div class="content-wrapper">
+  <h1 id="curriculum-vitae-wijnand-van-deutekom">Curriculum Vitae - Wijnand van Deutekom</h1>
+  <hr>
+  {{> personalia}}
 
-{{> personalia}}
+  {{> education}}
 
-{{> jobs}}
+  {{> jobs}}
 
-{{> experience}}
+  {{> experience}}
 
-{{> projects}}
+  {{> projects}}
 
-{{> freetime}}
+  {{> freetime}}
 
-{{> languages}}
-
+  {{> languages}}
+</div>
 <div class="my-custom-class-for-grid">
     <div class="my-custom-class-for-grid-cell">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, doloribus!
@@ -83,16 +85,22 @@
 </table>
 </template>
 
+<template name="education">
+  <h1 id="education">Education</h1>
+  <ul>
+    <li>Leiden University of Applied Sciences; Bachelor of ICT - <em>Sep 2008 - Sep 2012</em></li>
+  </ul>
+</template>
+
 <template name="jobs">
-<h1 id="jobs-so-far">Jobs, so far</h1>
-<ul>
-<li>Evalytics: iOS developer &amp; DevOps engineer - <em>june 2013 - june 2015</em></li>
-<li>Zerok: iOS developer - <em>juli 2012 - jan 2015</em></li>
-<li>Leiden University of Applied Sciences; Bachelor of ICT - <em>Sep 2008 - Sep 2012</em></li>
-<li>Q42: Internship, web developer <em>feb 2012 - juli 2012</em></li>
-<li>Studio Projectie: iOS Developer <em>juli 2011 - feb 2012</em></li>
-<li>Studio Projectie: Internship, iOS developer <em>feb 2011 - juli 2011</em></li>
-</ul>
+  <h1 id="jobs-so-far">Jobs</h1>
+  <ul>
+    <li>Evalytics: iOS developer &amp; DevOps engineer - <em>june 2013 - june 2015</em></li>
+    <li>Zerok: iOS developer - <em>juli 2012 - jan 2015</em></li>
+    <li>Q42: Internship, web developer <em>feb 2012 - juli 2012</em></li>
+    <li>Studio Projectie: iOS Developer <em>juli 2011 - feb 2012</em></li>
+    <li>Studio Projectie: Internship, iOS developer <em>feb 2011 - juli 2011</em></li>
+  </ul>
 </template>
 
 <template name="experience">
@@ -134,7 +142,7 @@
 <li>Javascript, jQuery, Zepto, Xui</li>
 </ul>
 <h2 id="studio-projectie-b-v-">Studio Projectie B.V.</h2>
-<p>My first internship was at a webdevelopment company called Studio Projectie. They had a SaaS product of their own (which later grown into a seperate company) that needed an iPhone application. Here I learned to develop for iOS using Objective-c and delivered an iPhone application. After my internship I continued to work here to further improve the iOS app until my graduation internship at Q42. In short:</p>
+<p>My first internship was at a webdevelopment company called Studio Projectie. They had a SaaS product of their own (which later grew into a seperate company) that needed an iPhone application. Here I learned to develop for iOS using Objective-c and delivered an iPhone application. After my internship I continued to work here to further improve the iOS app until my graduation internship at Q42. In short:</p>
 <ul>
 <li>UML</li>
 <li>Xcode</li>
@@ -156,4 +164,3 @@
 </ul>
 
 </template>
-

@@ -7,14 +7,14 @@
 @import 's-grid-classes'
 
 
-base-font-size = 17px            // base font size it is 16px by default it is used to calculate rem sizes
+base-font-size = 16px            // base font size it is 16px by default it is used to calculate rem sizes
 
 
 /* Set some basic rules */
 body
-    font base-font-size/1.8 "Lucida Grande", Arial, sans-serif
+    font base-font-size/1.6 "Sourc Sans Po", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color #333
-    background #fff
+    background #EAEAEB
 
 .my-custom-class-for-grid
     grid()
@@ -31,3 +31,9 @@ body
             cell(1, 4)
         +above(rem-calc(breakpoints[xxlg]))
             cell(1, 6)
+
+.content-wrapper
+    background #FAFAFA
+    margin 25px
+    padding 50px
+    width 750px
