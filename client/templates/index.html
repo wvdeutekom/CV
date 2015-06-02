@@ -1,155 +1,171 @@
 <head>
   <title>Curriculum Vitae</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 </head>
 
 
 <body>
-    {{> home}}
+  {{> home}}
 </body>
 
 
 <template name="home">
-<div class="content-wrapper">
-<div class="content-wrapper-cell">
-  <h1 id="curriculum-vitae-wijnand-van-deutekom">Curriculum Vitae - Wijnand van Deutekom</h1>
-</div>
-  {{> personalia}}
+  <div class="content-wrapper">
+    <div class="content-wrapper-cell">
+      <h1 id="curriculum-vitae-wijnand-van-deutekom">Curriculum Vitae - Wijnand van Deutekom</h1>
+    </div>
 
-  {{> education}}
+    <div class="content-wrapper-grid">
+      {{> personalia}}
 
-  {{> jobs}}
+      {{> jobs}}
 
-  {{> experience}}
+      {{> education}}
 
-  {{> projects}}
+      {{> experience}}
 
-  {{> freetime}}
+      {{> projects}}
 
-  {{> languages}}
-</div>
+      {{> freetime}}
+
+      {{> languages}}
+    </div>
+  </div>
 </template>
 
 <template name="personalia">
-<div class="content-wrapper-personalia">
-<div class="content-wrapper-personalia-col">
-<h2 id="personalia">Personalia</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th style="text-align:right"></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td style="text-align:right">Wijnand van Deutekom</td>
-</tr>
-<tr>
-<td><strong>Phone</strong></td>
-<td style="text-align:right">0639330430</td>
-</tr>
-<tr>
-<td><strong>Date of Birth</strong></td>
-<td style="text-align:right">21 December 1989</td>
-</tr>
-<tr>
-<td><strong>City</strong></td>
-<td style="text-align:right">Leiden</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="content-wrapper-personalia-col">
-<img class="personalia-image" src="https://lh5.googleusercontent.com/-i8F3yBp5z4Y/VVd7LH_anoI/AAAAAAAARnk/L1pttfGS2W4/w836-h835-no/10515241_10152456412231131_7380296797539678127_o.jpg">
-</div>
-</div>
+  <div class="content-wrapper-personalia">
+    <div class="content-wrapper-col14">
+      <img class="personalia-image" src="https://lh5.googleusercontent.com/-i8F3yBp5z4Y/VVd7LH_anoI/AAAAAAAARnk/L1pttfGS2W4/w836-h835-no/10515241_10152456412231131_7380296797539678127_o.jpg">
+    </div>
+    <div class="content-wrapper-col12">
+      <h2 id="personalia">Personalia</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th style="text-align:right"></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td style="text-align:right">Wijnand van Deutekom</td>
+          </tr>
+          <tr>
+            <td><strong>Phone</strong></td>
+            <td style="text-align:right">0639330430</td>
+          </tr>
+          <tr>
+            <td><strong>Date of Birth</strong></td>
+            <td style="text-align:right">21 December 1989</td>
+          </tr>
+          <tr>
+            <td><strong>City</strong></td>
+            <td style="text-align:right">Leiden</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </template>
 
 <template name="education">
-<div class="content-wrapper-cell">
-  <h2 id="education">Education</h2>
+  <div class="content-wrapper-cell">
+    <h2 id="education">Education</h2>
     Leiden University of Applied Sciences; Bachelor of ICT - <em>Sep 2008 - Sep 2012</em>
-</div>
+  </div>
 </template>
 
 <template name="jobs">
-<div class="content-wrapper-cell">
-  <h2 id="jobs-so-far">Jobs</h2>
+  <div class="content-wrapper-cell">
+    <h2 id="jobs-so-far">Jobs</h2>
     (Gnaefa B.V) Evalytics: iOS developer &amp; DevOps engineer - <em>june 2013 - june 2015</em><br>
     (Gnaefa B.V) Zerok: iOS developer - <em>july 2012 - jan 2015</em><br>
     Q42: Internship, web developer <em>feb 2012 - july 2012</em><br>
     (Gnaefa B.V) Studio Projectie: iOS Developer <em>july 2011 - feb 2012</em><br>
     (Gnaefa B.V) Studio Projectie: Internship, iOS developer <em>feb 2011 - july 2011</em><br>
-</div>
+  </div>
 </template>
 
 <template name="experience">
-<div class="content-wrapper-cell">
-<h2 id="experience">Experience</h2>
-<strong>Programming/scripting languages:</strong> Objective-c, Javascript (Meteor, AngularJS, jQuery), Bash, Java, Python, HTML5/CSS3<br>
-<strong>Tools</strong>: Git, SVN, MySQL, SQL and a course on Oracle SQL in university<br>
-<strong>Setting up, using and mantaining:</strong> Docker, Elasticsearch, Beanstalk, Loggly, Envoyer, Apache, supervisor, Greyhole<br>
-<!-- <strong>?FreeBSD, Puppet?</strong><br> -->
-</div>
+  <div class="content-wrapper-cell">
+    <h2 id="experience">Experience</h2>
+    <strong>Programming/scripting languages:</strong> Objective-c, Javascript (Meteor, AngularJS, jQuery), Bash, Java, Python, HTML5/CSS3<br>
+    <strong>Tools</strong>: Git, SVN, MySQL, SQL and a course on Oracle SQL in university<br>
+    <strong>Setting up, using and mantaining:</strong> Docker, Elasticsearch, Beanstalk, Loggly, Envoyer, Apache, supervisor, Greyhole<br>
+    <!-- <strong>?FreeBSD, Puppet?</strong><br> -->
+  </div>
 </template>
 
 <template name="projects">
-<div class="content-wrapper-cell">
-<h2 id="projects">Projects</h2>
-<h3 id="evalytics-b-v-">Evalytics B.V.</h3>
-<p>A company focused on delivering student-to-teacher review SaaS for universities all across the Netherlands. This review software enables students to review their teachers, courses and exams throughout the year using either the iOS, Android or web application. As co-founder and employee at Evalytics I was jointly responsible (together with my other two co-founders) for decision-making concerning (web/mobile) development, marketing, finding new avenues for acquisition and, as iOS developer, responsible for the development of the iPhone application. In my time at this company I&#39;ve broadened my technical expertise while aiming towards the DevOps side of the company by researching and implementing new techniques and tools to help colleagues develop more efficiently. A few highlights of my time at Evalytics:</p>
-<ul>
-<li>Docker; Converted current development &amp; hosting infrastructure to Docker for Evalytics B.V., DigitaleFactuur B.V. and Trix-incasso B.V. Including giving workshops on proper use/best practices of the Docker engine.</li>
-<li>Developed the Evalytics iPhone application.</li>
-<li>Git; Introduced Git and converted current version control system (SVN), given workshops to employees on best practices.</li>
-<li>Given product presentations for customer acquisition and student/teacher lectures on best practices of the Evalytics SaaS.</li>
-</ul>
-<h3 id="zerok-v-o-f-">Zerok V.O.F.</h3>
-<p>A mobile development company started as a joint venture together with my classmate Dennis Wagenaar, Studio Projectie B.V. and myself. During my time here my focus lay primarily on the iOS development and I gained experience with customer acquisition and customer relations. A short list of my projects at Zerok:</p>
-<ul>
-<li><strong>Gibbon.co;</strong> Worked together with the Gibbon team on the development of the iPhone and iPad application that can be used to share knowledge in- and outside of companies that purchased this SaaS.</li>
-<li><strong>El Cid;</strong> Every year the universities in Leiden organize an introduction week for new students to get to know each other. I developed the iPhone application that facilitated this introduction week in letting students know where activities were taking place.</li>
-<li><strong>Vensters voor Bedrijfsvoering;</strong> An initiative by ICTU to get a better view of the operational management of municipalities throughout the country. It enables managers of municipalities who use this software system to view existing statistics on demand using an iPad application. Figures on finance, civil service, overhead, hiring, human resource management, flexibility, durability and for example the ICT cost and quality and many more are available for review in this iPad application. After working closely with ICTU to map expectations and demands I created the iPad application and maintained it for over 2 years.</li>
-<li><strong>Executive Health Management;</strong> A medical health examination company providing medical care to top executives and managers of large companies. I created an iPhone application in which the customer can communicate with his/her physician and check on progress of medical examinations.</li>
-<li><strong>Digitalefactuur B.V.;</strong>My previous iPhone app version for DigitaleFactuur, which I created during my time at Studio Projectie, was in the AppStore for almost a year. It needed an overhaul and after getting to know the wishes/demands I refactored and fixed bugs and added features to the application.</li>
-<li><strong>Coastwatch;</strong> A non-profit organization that promotes the health of and preservation of the North Sea by, amongst other things, sending groups of high school students with a fun and educational checklist to map out the polution along the shoreline. I created the iPhone application that replaces this checklist and makes it a more interactive experience.</li>
-<li><strong>ShopApp;</strong>As a small dream of our own, creating our own mobile app that could be successful in the dutch (app)marketplace, we created the ShopApp. Trough this mobile app users were able to see any discounts of local stores in the immediate vicinity on the interactive map. I created the iPhone application and together with Dennis Wagenaar and Studio Projectie i was responsible for the direction and project management.</li>
-</ul>
-<h3 id="internships">Internships at Q42 and Studio Projectie</h3>
-<p></p>
-<h3 id="q42">Q42</h3>
-<p>A successful web and mobile development company in The Hague with around 40 employees. During my graduation internship at Q42 I researched wether it could be possible to recreate a true native app-experience within web browsers on smart phones. This included theoretical research, interviews with employees (after all, what <em>is</em> a native experience?) and development using HTML5, CCS3 animations and Javacript. In short:</p>
-<ul>
-<li>HTML5 &amp; CSS3</li>
-<li>Javascript, jQuery, Zepto, Xui</li>
-</ul>
-<h3 id="studio-projectie-b-v-">Studio Projectie B.V.</h3>
-<p>My first internship was at a webdevelopment company called Studio Projectie. They had a SaaS product of their own (which later grew into a seperate company) that needed an iPhone application. Here I learned to develop for iOS using Objective-c and delivered an iPhone application. After my internship I continued to work here to further improve the iOS app until my graduation internship at Q42. In short:</p>
-<ul>
-<li>UML</li>
-<li>Xcode</li>
-<li>Objective -c</li>
-</ul>
-</div>
+  <div class="content-wrapper-col11">
+    <h2 id="projects">Projects</h2>
+  </div>
+  <div class="content-wrapper-col14">
+    <h3 id="evalytics-b-v-">Evalytics B.V.</h3>
+    <h4>june 2013 - june 2015</h4>
+  </div>
+  <div class="content-wrapper-col12">
+    <h3 id="evalytics-b-v-">Evalytics B.V.</h3>
+    <p>A company focused on delivering student-to-teacher review SaaS for universities all across the Netherlands. This review software enables students to review their teachers, courses and exams throughout the year using either the iOS, Android or web application. As co-founder and employee at Evalytics I was jointly responsible (together with my other two co-founders) for decision-making concerning (web/mobile) development, marketing, finding new avenues for acquisition and, as iOS developer, responsible for the development of the iPhone application. In my time at this company I&#39;ve broadened my technical expertise while aiming towards the DevOps side of the company by researching and implementing new techniques and tools to help colleagues develop more efficiently. A few highlights of my time at Evalytics:</p>
+    <ul>
+      <li>Docker; Converted current development &amp; hosting infrastructure to Docker for Evalytics B.V., DigitaleFactuur B.V. and Trix-incasso B.V. Including giving workshops on proper use/best practices of the Docker engine.</li>
+      <li>Developed the Evalytics iPhone application.</li>
+      <li>Git; Introduced Git and converted current version control system (SVN), given workshops to employees on best practices.</li>
+      <li>Given product presentations for customer acquisition and student/teacher lectures on best practices of the Evalytics SaaS.</li>
+    </ul>
+  </div>
+  <div class="content-wrapper-col14">
+    <h3 id="evalytics-b-v-">Zerok V.O.F.</h3>
+    <h4>july 2012 - jan 2015</h4>
+  </div>
+  <div class="content-wrapper-col12">
+    <h3 id="zerok-v-o-f-">Zerok V.O.F.</h3>
+    <p>A mobile development company started as a joint venture together with my classmate Dennis Wagenaar, Studio Projectie B.V. and myself. During my time here my focus lay primarily on the iOS development and I gained experience with customer acquisition and customer relations. A short list of my projects at Zerok:</p>
+    <ul>
+      <li><strong>Gibbon.co;</strong> Worked together with the Gibbon team on the development of the iPhone and iPad application that can be used to share knowledge in- and outside of companies that purchased this SaaS.</li>
+      <li><strong>El Cid;</strong> Every year the universities in Leiden organize an introduction week for new students to get to know each other. I developed the iPhone application that facilitated this introduction week in letting students know where activities were taking place.</li>
+      <li><strong>Vensters voor Bedrijfsvoering;</strong> An initiative by ICTU to get a better view of the operational management of municipalities throughout the country. It enables managers of municipalities who use this software system to view existing statistics on demand using an iPad application. Figures on finance, civil service, overhead, hiring, human resource management, flexibility, durability and for example the ICT cost and quality and many more are available for review in this iPad application. After working closely with ICTU to map expectations and demands I created the iPad application and maintained it for over 2 years.</li>
+      <li><strong>Executive Health Management;</strong> A medical health examination company providing medical care to top executives and managers of large companies. I created an iPhone application in which the customer can communicate with his/her physician and check on progress of medical examinations.</li>
+      <li><strong>Digitalefactuur B.V.;</strong>My previous iPhone app version for DigitaleFactuur, which I created during my time at Studio Projectie, was in the AppStore for almost a year. It needed an overhaul and after getting to know the wishes/demands I refactored and fixed bugs and added features to the application.</li>
+      <li><strong>Coastwatch;</strong> A non-profit organization that promotes the health of and preservation of the North Sea by, amongst other things, sending groups of high school students with a fun and educational checklist to map out the polution along the shoreline. I created the iPhone application that replaces this checklist and makes it a more interactive experience.</li>
+      <li><strong>ShopApp;</strong>As a small dream of our own, creating our own mobile app that could be successful in the dutch (app)marketplace, we created the ShopApp. Trough this mobile app users were able to see any discounts of local stores in the immediate vicinity on the interactive map. I created the iPhone application and together with Dennis Wagenaar and Studio Projectie i was responsible for the direction and project management.</li>
+    </ul>
+  </div>
+  <h3 id="internships">Internships at Q42 and Studio Projectie</h3>
+  <p></p>
+  <h3 id="q42">Q42</h3>
+  <p>A successful web and mobile development company in The Hague with around 40 employees. During my graduation internship at Q42 I researched wether it could be possible to recreate a true native app-experience within web browsers on smart phones. This included theoretical research, interviews with employees (after all, what <em>is</em> a native experience?) and development using HTML5, CCS3 animations and Javacript. In short:</p>
+  <ul>
+    <li>HTML5 &amp; CSS3</li>
+    <li>Javascript, jQuery, Zepto, Xui</li>
+  </ul>
+  <h3 id="studio-projectie-b-v-">Studio Projectie B.V.</h3>
+  <p>My first internship was at a webdevelopment company called Studio Projectie. They had a SaaS product of their own (which later grew into a seperate company) that needed an iPhone application. Here I learned to develop for iOS using Objective-c and delivered an iPhone application. After my internship I continued to work here to further improve the iOS app until my graduation internship at Q42. In short:</p>
+  <ul>
+    <li>UML</li>
+    <li>Xcode</li>
+    <li>Objective -c</li>
+  </ul>
 </template>
 
 <template name="freetime">
-<div class="content-wrapper-cell">
-<h2 id="free-time">Free time</h2>
-<p>I love to read books, watch movies, tv shows and program/tweak my ubuntu HTPC into full automation. Finding new and exciting programming languages to play with is what I like to do most. Going out for a run or going to the University Sports Centre a few times a week clears my mind.</p>
-</div>
+  <div class="content-wrapper-cell">
+    <h2 id="free-time">Free time</h2>
+    <p>I love to read books, watch movies, tv shows and program/tweak my ubuntu HTPC into full automation. Finding new and exciting programming languages to play with is what I like to do most. Going out for a run or going to the University Sports Centre a few times a week clears my mind.</p>
+  </div>
 </template>
 
 <template name="languages">
-<div class="content-wrapper-cell">
-<h2 id="spoken-written-languages">Spoken &amp; written languages</h2>
-<ul>
-<li>Dutch (native)</li>
-<li>English </li>
-<li>Basic understanding of German and French</li>
-</ul>
+  <div class="content-wrapper-cell">
+    <h2 id="spoken-written-languages">Spoken &amp; written languages</h2>
+    <ul>
+      <li>Dutch (native)</li>
+      <li>English </li>
+      <li>Basic understanding of German and French</li>
+    </ul>
 
-</div>
+  </div>
 </template>
